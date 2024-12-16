@@ -1,0 +1,18 @@
+backend:
+    functions:
+        - entry: src/app.js
+          handler: handler
+          name: express
+          path: .
+          type: httpServer
+    language:
+        name: js
+    path: .
+    scripts:
+        deploy:
+            - npm install
+        local:
+            - npm install
+name: eventhub-backend
+region: eu-central-1
+yamlVersion: 2
